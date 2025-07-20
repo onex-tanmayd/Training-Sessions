@@ -18,12 +18,12 @@ public class AppraisalService {
     public AppraisalResult calculateAppraisal(Employee employee) {
         AppraisalResult result = new AppraisalResult(employee.getEmployeeCode(), employee.getName());
 
-        // Check if employee is eligible (minimum 1 year service)
-        if (!isEligibleForAppraisal(employee)) {
-            result.setEligible(false);
-            result.setComments("Employee not eligible for appraisal. Minimum 1 year service required.");
-            return result;
-        }
+//        // Check if employee is eligible (minimum 1 year service)
+//        if (!isEligibleForAppraisal(employee)) {
+//            result.setEligible(false);
+//            result.setComments("Employee not eligible for appraisal. Minimum 1 year service required.");
+//            return result;
+//        }
 
         // Calculate individual scores
         double ticketScore = calculateTicketScore(employee);

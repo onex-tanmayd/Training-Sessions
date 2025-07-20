@@ -167,32 +167,6 @@ public class AppraisalApplication {
         return employee;
     }
 
-    // For backward compatibility: not used in main flow
-    private static Employee collectEmployeeData() {
-        String employeeCode = ConsoleUtils.getUserInput(scanner, "Employee Code: ");
-        String name = ConsoleUtils.getUserInput(scanner, "Employee Name: ");
-        String department = ConsoleUtils.getUserInput(scanner, "Department: ");
-
-        LocalDate joiningDate = getDateInput("Joining Date (YYYY-MM-DD): ");
-        if (joiningDate.isAfter(LocalDate.now())) {
-            System.out.println("Joining date cannot be in the future. Please enter a valid date.");
-            joiningDate = getDateInput("Joining Date (YYYY-MM-DD): ");
-        }
-        // Check eligibility immediately
-        Employee tempEmployee = new Employee(employeeCode, name, department, joiningDate, 0.0);
-        if (!appraisalService.isEligibleForAppraisal(tempEmployee)) {
-            System.out.println("Employee not eligible for appraisal. Minimum 1 year service required.");
-            scanner.close();
-            System.exit(0);
-        }
-
-        double currentSalary = ConsoleUtils.getDoubleInput(scanner, "Current Salary: ");
-        Employee employee = new Employee(employeeCode, name, department, joiningDate, currentSalary);
-
-        collectPerformanceAndRatings(employee);
-        return employee;
-    }
-
     private static LocalDate getDateInput(String prompt) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
