@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="336f2c35-facc-443d-9ba7-280d42ef1156" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2zvBRMcvemC2zQxu3diWPEsbIYG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Subject.executor": "Run",
+    "Application.org.example.tight.coupling.Subject.executor": "Run",
+    "JUnit.BankAccountTest.depositPositiveAmountShouldIncreaseBalance.executor": "Run",
+    "JUnit.BankAccountTest.executor": "Coverage",
+    "JUnit.PaymentServiceTest.executor": "Run",
+    "JUnit.PaymentServiceTest.makePaymentSufficientFundsShouldSucceedAndLog.executor": "Run",
+    "JUnit.org.example.exercise in coupling.executor": "Coverage",
+    "JUnit.org.example.junit in coupling.executor": "Coverage",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/home/tanmay.dalavi@onextel.com/Desktop/Training-sessions/Day2/Onextel Salary Appraisal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/parikshitmitkar/Documents/JAVA/TestingLec/coupling/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example" />
+      <recent name="org.example.junit" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.tight.coupling" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PaymentServiceTest">
+    <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.junit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.junit" />
+      <option name="MAIN_CLASS_NAME" value="org.example.junit.BankAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountTest.depositPositiveAmountShouldIncreaseBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.junit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.junit" />
+      <option name="MAIN_CLASS_NAME" value="org.example.junit.BankAccountTest" />
+      <option name="METHOD_NAME" value="depositPositiveAmountShouldIncreaseBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.junit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.junit" />
+      <option name="MAIN_CLASS_NAME" value="org.example.junit.PaymentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceTest.makePaymentSufficientFundsShouldSucceedAndLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.junit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.junit" />
+      <option name="MAIN_CLASS_NAME" value="org.example.junit.PaymentServiceTest" />
+      <option name="METHOD_NAME" value="makePaymentSufficientFundsShouldSucceedAndLog" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.junit in coupling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coupling" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.junit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.junit" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PaymentServiceTest" />
+        <item itemvalue="JUnit.PaymentServiceTest.makePaymentSufficientFundsShouldSucceedAndLog" />
+        <item itemvalue="JUnit.org.example.junit in coupling" />
+        <item itemvalue="JUnit.BankAccountTest" />
+        <item itemvalue="JUnit.BankAccountTest.depositPositiveAmountShouldIncreaseBalance" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="336f2c35-facc-443d-9ba7-280d42ef1156" name="Changes" comment="" />
+      <created>1752601658303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752601658303</updated>
+      <workItem from="1752816288415" duration="329000" />
+      <workItem from="1752823903043" duration="148000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/coupling/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TestingLec$org_example_exercise_in_coupling.ic" NAME="org.example.exercise in coupling Coverage Results" MODIFIED="1752655939591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.exercise.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingLec$org_example_junit_in_coupling.ic" NAME="org.example.junit in coupling Coverage Results" MODIFIED="1752669586697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.junit.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TestingLec$BankAccountTest.ic" NAME="BankAccountTest Coverage Results" MODIFIED="1752669531866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.junit.*</FILTER>
+    </SUITE>
+  </component>
+</project>
