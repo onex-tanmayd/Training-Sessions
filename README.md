@@ -10,7 +10,7 @@ This document outlines a 5-week technical training plan. Each week focuses on a 
 |------------|--------|----------------------------------|
 | 14-Jul     | Day 1  | [Git Basics](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day1) |
 | 15-Jul     | Day 2  | [Programming Fundamentals](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day2)         |
-| 16-Jul     | Day 3  | Testing Fundamentals             |
+| 16-Jul     | Day 3  | [Testing Fundamentals](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day3)              |
 | 17-Jul     | Day 4  | Debugging Techniques             |
 | 18-Jul     | Day 5  | Basic Build & Automation         |
 
