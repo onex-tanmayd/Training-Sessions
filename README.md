@@ -20,7 +20,7 @@ This document outlines a 5-week technical training plan. Each week focuses on a 
 
 | Date       | Day    | Topic                            |
 |------------|--------|----------------------------------|
-| 21-Jul     | Day 6  | Linux Shell (Bash/Zsh) & Navigation |
+| 21-Jul     | Day 6  | [Linux Shell (Bash/Zsh) & Navigation](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day6) |
 | 22-Jul     | Day 7  | 1) File Permissions & Ownership<br>2) Text File Manipulation |
 | 23-Jul     | Day 8  | 1) Process Management<br>2) Package Management (Distro Specific)<br>3) Environment Variables |
 | 24-Jul     | Day 9  | Networking Basics                |
