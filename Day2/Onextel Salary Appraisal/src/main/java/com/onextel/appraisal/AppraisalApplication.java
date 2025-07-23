@@ -20,46 +20,126 @@ public class AppraisalApplication {
 
     public static void main(String[] args) {
         ConsoleUtils.printHeader();
+        showAppraisalStatus();
 
-        // User authentication
-        String userType = authenticateUser();
+        String employeeCode = ConsoleUtils.getUserInput(scanner, "Enter Employee Code: ");
+        List<String> done = getAppraisedEmployeeCodes();
 
-        System.out.println("\nWelcome, " + userType + "!");
-        ConsoleUtils.printSeparator();
-
-        // Employee data collection (from file or manual)
-        Employee employee = getEmployeeFromFileOrManual();
-
-        // Calculate appraisal
-        AppraisalResult result = appraisalService.calculateAppraisal(employee);
-
-        // Display results
-        displayResults(result);
-
+        if (done.contains(employeeCode)) {
+            showAppraisalResult(employeeCode);
+        } else {
+            Employee employee = findEmployeeInFile(employeeCode);
+            if (employee == null) {
+                System.out.println("Employee not found. Please enter details manually.");
+                employee = collectEmployeeDataWithCode(employeeCode);
+            } else {
+                System.out.println("Employee found in file. Details loaded.");
+                printEmployeeDetails(employee);
+                collectPerformanceAndRatings(employee);
+            }
+            AppraisalResult result = appraisalService.calculateAppraisal(employee);
+            displayResults(result);
+            writeAppraisalResultToCsv(result);
+        }
         scanner.close();
     }
+    private static List<String> getAppraisedEmployeeCodes() {
+        List<String> codes = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("appraisals.csv"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length > 0) {
+                    codes.add(parts[0]);
+                }
+            }
+        } catch (IOException e) {
+            // File may not exist yet, that's fine
+        }
+        return codes;
+    }
 
-    private static String authenticateUser() {
-        System.out.println("\nPlease select your role:");
-        System.out.println("1. HR Manager");
-        System.out.println("2. Department Manager");
-        System.out.println("3. Senior Manager");
-        System.out.println("4. Administrator");
+    private static void showAppraisalStatus() {
+        List<String> allCodes = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("employees.csv"))) {
+            String line;
+            br.readLine(); // skip header
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length > 0) allCodes.add(parts[0]);
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading employees.csv: " + e.getMessage());
+        }
 
-        int choice = ConsoleUtils.getIntInput(scanner, "Enter your choice (1-4): ");
+        List<String> done = getAppraisedEmployeeCodes();
+        List<String> pending = new ArrayList<>(allCodes);
+        pending.removeAll(done);
 
-        switch (choice) {
-            case 1: return "HR Manager";
-            case 2: return "Department Manager";
-            case 3: return "Senior Manager";
-            case 4: return "Administrator";
-            default:
-                System.out.println("Invalid choice. Defaulting to HR Manager.");
-                return "HR Manager";
+        System.out.println("\nAppraisal Pending: " + pending);
+        System.out.println("Appraisal Done: " + done);
+    }
+
+    private static void showAppraisalResult(String employeeCode) {
+        try (BufferedReader br = new BufferedReader(new FileReader("appraisals.csv"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split(",", -1); // -1 to include empty fields
+                if (parts.length > 1 && parts[0].equals(employeeCode)) {
+                    System.out.println("\nAppraisal Result for " + employeeCode + ":");
+                    System.out.println("Employee Name: " + parts[1]);
+                    System.out.println("Total Score: " + parts[2] + "/10");
+                    System.out.println("Current Salary: ₹" + parts[3]);
+                    System.out.println("New Salary: ₹" + parts[4]);
+                    System.out.println("Appraisal Percentage: " + parts[5] + "%");
+                    System.out.println("Performance Grade: " + parts[6]);
+                    System.out.println("Comments: " + parts[7]);
+                    return;
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading appraisals.csv: " + e.getMessage());
+        }
+        System.out.println("No appraisal result found for " + employeeCode);
+    }
+
+    private static void writeAppraisalResultToCsv(AppraisalResult result) {
+        try (FileWriter fw = new FileWriter("appraisals.csv", true);
+             BufferedWriter bw = new BufferedWriter(fw)) {
+            // Format: employeeCode,employeeName,totalScore,currentSalary,newSalary,appraisalPercentage,performanceGrade,comments
+            String line = String.format("%s,%s,%.2f,%.2f,%.2f,%.1f,%s,%s",
+                    result.getEmployeeCode(),
+                    result.getEmployeeName(),
+                    result.getTotalScore(),
+                    result.getCurrentSalary(),
+                    result.getNewSalary(),
+                    result.getAppraisalPercentage(),
+                    result.getPerformanceGrade(),
+                    result.getComments().replace(",", ";"));
+            bw.write(line);
+            bw.newLine();
+        } catch (IOException e) {
+            System.out.println("Error writing to appraisals.csv: " + e.getMessage());
         }
     }
 
-    // New: Try to load employee from file, else collect manually
+    private static void writeEmployeeToCsv(Employee employee) {
+        try (FileWriter fw = new FileWriter("employees.csv", true);
+             BufferedWriter bw = new BufferedWriter(fw)) {
+            // Write in the same order as the CSV header
+            String line = String.format("%s,%s,%s,%s,%.2f",
+                    employee.getEmployeeCode(),
+                    employee.getName(),
+                    employee.getDepartment(),
+                    employee.getJoiningDate(),
+                    employee.getCurrentSalary());
+            bw.write(line);
+            bw.newLine();
+        } catch (IOException e) {
+            System.out.println("Error writing to employees.csv: " + e.getMessage());
+        }
+    }
+
     private static Employee getEmployeeFromFileOrManual() {
         System.out.println("\nEmployee Information:");
         ConsoleUtils.printSeparator();
@@ -154,6 +234,7 @@ public class AppraisalApplication {
         }
         // Check eligibility immediately
         Employee tempEmployee = new Employee(employeeCode, name, department, joiningDate, 0.0);
+        writeEmployeeToCsv(tempEmployee);
         if (!appraisalService.isEligibleForAppraisal(tempEmployee)) {
             System.out.println("Employee not eligible for appraisal. Minimum 1 year service required.");
             scanner.close();
