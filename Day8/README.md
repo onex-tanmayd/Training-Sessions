@@ -1,7 +1,3 @@
-Here’s your content converted into a clean and readable `README.md` format with notes and explanations:
-
----
-
 # 🔧 Linux Monitoring & Process Management – Cheat Sheet
 
 A quick reference for commonly used commands to monitor system performance, disk usage, networking, and process control in Linux.
