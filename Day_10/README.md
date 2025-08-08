@@ -71,9 +71,10 @@ Tested on a **1 GB mixed file dataset**:
 
 ## 5. Visual Comparison (Speed vs Compression)
 
-![[compression_comparison.png]]
+<img width="1200" height="800" alt="compression_comparison" src="https://github.com/user-attachments/assets/4f592ef7-20cb-48a5-a21a-9ca55113a848" />
 
-```
+
+
 **Interpretation:**
 
 - `tar.gz`: Good balance — fairly quick, good compression.
@@ -96,5 +97,5 @@ Tested on a **1 GB mixed file dataset**:
 
 ---
 
-```
+
 
