@@ -32,7 +32,7 @@ This document outlines a 5-week technical training plan. Each week focuses on a 
 
 | Date       | Day    | Topic                            |
 |------------|--------|----------------------------------|
-| 28-Jul     | Day 11 | Java Essentials & Environment    |
+| 28-Jul     | Day 11 | [Java Essentials & Environment](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_11)    |
 | 29-Jul     | Day 12 | Object-Oriented Programming Basics |
 | 30-Jul     | Day 13 | OOP Advanced Concepts            |
 | 31-Jul     | Day 14 | Interfaces & Packages            |
