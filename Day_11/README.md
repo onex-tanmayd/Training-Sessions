@@ -1,6 +1,3 @@
-Here’s a **Markdown notes document** for a knowledge transfer (KT) session on **Java Essentials & Environment** — no interview wording, just clear and structured session notes.
-
-````markdown
 # ☕ Java Essentials & Environment
 
 ## 1. Introduction to Java
