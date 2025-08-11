@@ -1,6 +1,6 @@
 # Java Programming Resources
 
-## Object-Oriented Programming Basics Resources:
+## OOP Advanced Concepts:
 - [Java OOP Concepts - W3Schools](https://www.w3schools.com/java/java_oop.asp)
 - [Static Keyword in Java - GeeksforGeeks](https://www.geeksforgeeks.org/java/static-keyword-java/)
 - [Abstract Classes vs Interfaces - Oracle](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
