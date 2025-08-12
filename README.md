@@ -46,7 +46,7 @@ This document outlines a 5-week technical training plan. Each week focuses on a 
 |------------|--------|----------------------------------|
 | 4-Aug      | Day 16 | [Collections Framework](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_16)            |
 | 5-Aug      | Day 17 | Multithreading                   |
-| 6-Aug      | Day 18 | File I/O & JDBC                  |
+| 6-Aug      | Day 18 | [File I/O & JDBC](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_18)                  |
 | 7-Aug      | Day 19 | Modern Java Features (Lambdas, Streams, etc.) |
 | 8-Aug      | Day 20 | Spring Boot Fundamentals         |
 
