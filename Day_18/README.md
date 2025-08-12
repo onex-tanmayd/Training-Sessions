@@ -1,6 +1,3 @@
-Here is a simple `README.md` for your project:
-
-```markdown
 # FileIO
 
 A Java project for reading user data from a CSV file, inserting it into a PostgreSQL database, and exporting data from the database back to a CSV file.
@@ -69,4 +66,3 @@ A Java project for reading user data from a CSV file, inserting it into a Postgr
 ## License
 
 This project is for training and educational purposes.
-```
