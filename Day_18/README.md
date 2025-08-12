@@ -62,7 +62,3 @@ A Java project for reading user data from a CSV file, inserting it into a Postgr
 - `src/main/java/dto/User.java` - User data record.
 - `src/main/resources/users.csv` - Sample input CSV.
 - `src/main/resources/users_export.csv` - Output CSV after export.
-
-## License
-
-This project is for training and educational purposes.
