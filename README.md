@@ -56,7 +56,7 @@ This document outlines a 5-week technical training plan. Each week focuses on a 
 
 | Date       | Day    | Topic                            |
 |------------|--------|----------------------------------|
-| 11-Aug     | Day 21 | Data Persistence with JPA        |
+| 11-Aug     | Day 21 | [Data Persistence with JPA](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_21)        |
 | 12-Aug     | Day 22 | RESTful Services & Validation    |
 | 13-Aug     | Day 23 | Spring Security Basics           |
 
