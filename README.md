@@ -48,7 +48,7 @@ This document outlines a 5-week technical training plan. Each week focuses on a 
 | 5-Aug      | Day 17 | Multithreading                   |
 | 6-Aug      | Day 18 | [File I/O & JDBC](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_18)                  |
 | 7-Aug      | Day 19 | Modern Java Features (Lambdas, Streams, etc.) |
-| 8-Aug      | Day 20 | [Spring Boot Fundamentals](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_23)          |
+| 8-Aug      | Day 20 | [Spring Boot Fundamentals](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_23/spring-security)          |
 
 ---
 
@@ -58,7 +58,7 @@ This document outlines a 5-week technical training plan. Each week focuses on a 
 |------------|--------|----------------------------------|
 | 11-Aug     | Day 21 | [Data Persistence with JPA](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_21)        |
 | 12-Aug     | Day 22 | [RESTful Services & Validation](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_21)     |
-| 13-Aug     | Day 23 | [Spring Security Basics](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_23)            |
+| 13-Aug     | Day 23 | [Spring Security Basics](https://github.com/onex-tanmayd/Training-Sessions/tree/master/Day_23/spring-security)            |
 
 ---
 
